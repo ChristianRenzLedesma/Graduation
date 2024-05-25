@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Graduation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jaro:opsz@6..72&family=Poetsen+One&display=swap');
+
+        * {
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .nav {
+            position: fixed;
+            background: red;
+            width: 100%;
+            height: 10vh;
+            gap: 50rem;
+            z-index: 1;
+        }
+
+        body {
+            background-image: url(grad.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 130vh;
+        }
+
+
+        a,
+        .congrats {
+            font-size: 30px;
+            text-decoration: none;
+            margin: 7px 20px;
+            color: white;
+        }
+
+        .name {
+            color: white;
+            text-shadow: 1px 4px 8px black;
+        }
+
+        .image img {
+            float: left;
+        }
+
+        .content {
+            top: 100px;
+            position: relative;
+        }
+
+        .paragraph {
+            font-size: 30px;
+        }
+
+        .img {
+            width: 500px;
+            margin: 0px 30px;
+            margin-bottom: 10px;
+        }
+
+        .gradpic {
+            width: 500px;
+            height: 300px;
+            margin: 0px 220px;
+        }
+
+        .gradpara {
+            margin: 0px 30px;
+            color: white;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            top: 10px;
+            position: relative;
+        }
+
+        .nav-item{
+            top: -5px;
+            position: relative;
+            font-size: 25px;
+        }
+        
+        .nav-link{
+            transition: .3s;
+        }
+
+        .nav-link:hover {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 575.98px) {
+            .name {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .paragraph {
+                font-size: 20px;
+            }
+
+            .gradpara {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .gradpic,
+            .img {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .gradpara {
+                text-align: center;
+            }
+
+            .gradpic,
+            .img {
+                width: 450px;
+                left: 20px;
+                position: relative;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .gradpara {
+                text-align: center;
+            }
+
+            .gradpic,
+            .img {
+                margin: 0 auto;
+            }
+        }
+/* 
+        @media (max-width: 767.98px) {}
+
+        @media (max-width: 991.98px) {}
+
+        @media (max-width: 1199.98px) {}
+
+        @media (max-width: 1399.98px) {} */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Graduation Memories</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mem">Memories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Classmates</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="image">
+            <img src="prof.png" class="img">
+            <h1 class="name">Miano, Chorsel Rose<br>
+                <p class="paragraph">Dear Chorsel,<br>
+
+                    Congratulations on your graduation from junior high school! This is a significant milestone,
+                    marking
+                    the end of one chapter and the beginning of another exciting journey. You've worked hard, shown
+                    great dedication, and now all your efforts have paid off.
+
+                    As you move forward into high school, embrace the opportunities and challenges that come your
+                    way.
+                    Keep your curiosity alive, continue to learn and grow, and never stop striving for your dreams.
+                    Remember, this is just the beginning of a bright and promising future.
+
+                    Celebrate this moment, enjoy your accomplishments, and get ready for the wonderful adventures
+                    that
+                    lie ahead.
+
+                    Once again, congratulations and best wishes for the future!
+                    <br>
+                    Warm regards,<br>
+                    Renz Ledesma
+                </p>
+            </h1>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="mem" class="row align-items-center mt-5">
+            <div class="col-md-6 order-md-2">
+                <img src="gradpic.png" class="gradpic">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <p class="gradpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, architecto
+                    nulla
+                    molestias temporibus quod aliquam perspiciatis quibusdam deserunt quis libero esse veniam,
+                    magnam
+                    molestiae voluptatibus aspernatur est reiciendis vel in.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
